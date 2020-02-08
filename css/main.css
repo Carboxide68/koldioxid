@@ -20,7 +20,6 @@ body * {
 }
 
 .wrapper {
-    background-image: linear-gradient(lightblue, white);
     height: 100%;
     width: 100%;
 }
@@ -87,9 +86,10 @@ body * {
 
 .content {
     margin-left: 17vw;
+    background-image: linear-gradient(to bottom right, white, lightblue);
     float: left;
-    width: calc(100% - 18vw);
-    margin-top: calc(1.70em + 5vh);
+    width: calc(100% - 17vw);
+    margin-top: calc(1.70em + 4vh);
     min-height: 100vh;
 }
 
@@ -177,6 +177,25 @@ body * {
 
 #miljotext > h2{
     text-align: center;
+}
+
+#psyktext > h2{
+    text-align: center;
+}
+
+#halsa {
+    margin-top: 5vw;
+}
+
+#psyktext {
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: justify;
+}
+
+#unfocusedpic {
+    width: 90%;
+    height: auto;
 }
 
 #chimneypic {
