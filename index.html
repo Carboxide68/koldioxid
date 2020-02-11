@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="css/grid.css"/>
+    <link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen and (max-aspect-ratio: 1/1)">
     <title>Koldioxid</title>
-    <script src="js/script.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -21,9 +22,14 @@
             </div>
         </nav>
         <nav class="topnav">
+            <div class="sitebutton noselect" id="viewreg">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
             <a class="sitebutton noselect" id="current">Hem</a>
-            <a class="sitebutton noselect">Miljö</a>
-            <a class="sitebutton noselect">Psykologisk påverkan</a>
+            <a class="sitebutton noselect" href="miljo.html">Miljö</a>
+            <a class="sitebutton noselect" href="psykologi.html">Psykologisk påverkan</a>
         </nav>
         <div class="content">
             <section class="infosection" id="koldioxid">
@@ -77,7 +83,7 @@
             </header>
             <section class="infosection" id="miljo">     
                 <div class="textbox" id="miljotext">
-                    <h2>Miljo</h2>
+                    <h2>Miljö</h2>
                     <p>
                         Koldioxid är en gas som bildas vid fullständig förbränning av kolföreningar i
                         syre men de stora tillflöden av atmosfäriskt koldioxid bidrar naturen själv med.
@@ -98,11 +104,11 @@
                         Dessutom leder utsläppen till havsförsurning, vilket kan utvecklas till ett allvarligt hot mot havens ekosystem.
                     </p>
                 </div>
-                <img src="img/chimney.jpg" id="chimneypic" alt="Skorsten som spottar rök">
+                <img src="img/chimney.jpg" class="picstyle" id="chimneypic" alt="Skorsten som spottar rök">
                 <!-- https://www.pxfuel.com/en/free-photo-qqliq -->
             </section>
             <section class="infosection" id="halsa">
-                <img src="img/bored.png" id="unfocusedpic" alt="En ofukserad tjej som ser trött ut">
+                <img src="img/bored.png" class="picstyle" id="unfocusedpic" alt="En ofukserad tjej som ser trött ut">
                 <div class="textbox" id="psyktext">
                     <h2>Hälsa</h2>
                     <p>
@@ -115,11 +121,12 @@
                         vid normalt tryck ligger vid –78 °C. Koldioxid är en giftfri gas, nödvändig för biosfären och för
                         syreomvandlingen, vid halter lägre än 200 ppm får växtligheten svårt att överleva.
                         Gasen i flytande form kan endast förekomma vid högt tryck; trippelpunkten ligger vid 5,1 atmosfärer
-                    </p>
-                    och vid 25 °C måste trycket ökas till 67 atm för att gasformig koldioxid ska övergå i flytande form. 
+                        och vid 25 °C måste trycket ökas till 67 atm för att gasformig koldioxid ska övergå i flytande form. 
+                </p>
                 </div>
             </section>
         </div>
     </div>
+    <script src="js/script.js"></script>
 </body>
 </html>

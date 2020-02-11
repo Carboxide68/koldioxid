@@ -1,6 +1,34 @@
+var menuButton = document.getElementById("viewreg");
+var topNav = document.getElementsByClassName("topnav")[0];
+var sideNav = document.getElementsByClassName("sidenav")[0];
+var content = document.getElementsByClassName("content")[0];
 
 window.addEventListener("resize", function() {
+    let topHeight = document.getElementById("current").offsetHeight;
+    menuButton.style.width = topHeight + "px";
+    menuButton.style.height = topHeight + "px";
+    content.style.marginLeft = sideNav.offsetWidth + "px";
+    content.style.marginTop = topNav.offsetHeight + "px";
+    topNav.style.marginLeft = sideNav.offsetWidth + "px";
+    topNav.style.width = window.width - sideNav.offsetWidth;
 });
 
 window.addEventListener("load", function() {
+    let topHeight = document.getElementById("current").offsetHeight;
+    menuButton.style.width = topHeight + "px";
+    menuButton.style.height = topHeight + "px";
+    content.style.marginLeft = sideNav.offsetWidth + "px";
+    content.style.marginTop = topNav.offsetHeight + "px";
+    topNav.style.marginLeft = sideNav.offsetWidth + "px";
+    topNav.style.width = window.width - sideNav.offsetWidth;
+});
+
+menuButton.addEventListener('click', function() {
+    if (sideNav.style.display === "none" || sideNav.style.display === "") {
+        sideNav.style.display = "block";
+        sideNav.style.marginTop = topNav.offsetHeight + "px";
+    } else {
+        sideNav.style.display = "";
+
+    }
 });

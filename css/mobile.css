@@ -1,0 +1,29 @@
+
+.infosection {
+    grid-template-columns: 1fr;
+}
+
+.content {
+    margin-left: 0;
+    width: 100%;
+}
+
+.topnav {
+    margin-left: 0;
+    width: 100%;
+}
+
+.sitebutton {
+    font-size: 1em;
+}
+
+.sidenav {
+    display: none;
+    width: 150px;
+}
+
+#viewreg {
+    display: inline-block;
+    height: 100%;
+    width: auto;
+}
