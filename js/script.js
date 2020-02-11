@@ -7,9 +7,9 @@ window.addEventListener("resize", function() {
     let topHeight = document.getElementById("current").offsetHeight;
     menuButton.style.width = topHeight + "px";
     menuButton.style.height = topHeight + "px";
-    content.style.marginLeft = sideNav.offsetWidth + "px";
+    content.style.marginLeft = (sideNav.offsetWidth - 2) + "px";
     content.style.marginTop = topNav.offsetHeight + "px";
-    topNav.style.marginLeft = sideNav.offsetWidth + "px";
+    topNav.style.marginLeft = (sideNav.offsetWidth - 2) + "px";
     topNav.style.width = window.width - sideNav.offsetWidth;
 });
 
@@ -17,9 +17,9 @@ window.addEventListener("load", function() {
     let topHeight = document.getElementById("current").offsetHeight;
     menuButton.style.width = topHeight + "px";
     menuButton.style.height = topHeight + "px";
-    content.style.marginLeft = sideNav.offsetWidth + "px";
+    content.style.marginLeft = (sideNav.offsetWidth - 2) + "px";
     content.style.marginTop = topNav.offsetHeight + "px";
-    topNav.style.marginLeft = sideNav.offsetWidth + "px";
+    topNav.style.marginLeft = (sideNav.offsetWidth - 2) + "px";
     topNav.style.width = window.width - sideNav.offsetWidth;
 });
 
@@ -29,6 +29,6 @@ menuButton.addEventListener('click', function() {
         sideNav.style.marginTop = topNav.offsetHeight + "px";
     } else {
         sideNav.style.display = "";
-
+        sideNav.style.marginTop = "";
     }
 });
