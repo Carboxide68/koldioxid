@@ -37,7 +37,7 @@ body * {
 
 .sidenav::-webkit-scrollbar {
     
-    background-color: rgb(165, 124, 124);
+    background-color: rgb(110, 110, 110);
 }
 
 .sidenav > * {
