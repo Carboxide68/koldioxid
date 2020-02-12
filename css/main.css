@@ -4,6 +4,7 @@ body {
     margin: 0;
     height: auto;
     display: block;
+    font-size: medium;
 }
 
 body * {
@@ -81,7 +82,7 @@ body * {
     border: none;
     padding: 2vh 3vw;
     display: inline-block;
-    font-size: 1.5em;
+    font-size: larger;
     height: 100%;
     text-decoration: none;
     color: black;
@@ -199,12 +200,6 @@ body * {
 
 #vadfinns {
     margin-top: 2vh;
-}
-
-#miljotext {
-    margin-top: auto;
-    margin-bottom: auto;
-    text-align: justify;
 }
 
 #halsa {

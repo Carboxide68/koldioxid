@@ -29,11 +29,12 @@ menuButton.addEventListener('click', function() {
 
 function updateCss() {
     let topHeight = document.getElementById("current").offsetHeight;
-    menuButton.style.width = topHeight + "px";
     menuButton.style.height = topHeight + "px";
+    menuButton.style.width = topHeight + "px";
     content.style.marginLeft = (sideNav.offsetWidth - 2) + "px";
     content.style.marginTop = topNav.offsetHeight + "px";
     topNav.style.marginLeft = (sideNav.offsetWidth - 2) + "px";
-    topNav.style.width = window.width - sideNav.offsetWidth;
+    topNav.style.width = (window.innerWidth - sideNav.offsetWidth) + "px";
+    content.style.width = (window.innerWidth - sideNav.offsetWidth) + "px";
     cued = false;
 }
