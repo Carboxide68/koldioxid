@@ -101,7 +101,8 @@ body * {
     background-image: linear-gradient(to bottom right, white, lightblue);
     float: left;
     width: calc(100% - 17vw);
-    margin-top: calc(1.70em + 4vh);
+    width: calc(100% - max(17vw, 150px));
+    margin-top: calc(1.65em + 4vh);
     min-height: 100vh;
 }
 
