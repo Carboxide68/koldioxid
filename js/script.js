@@ -2,6 +2,7 @@ var menuButton = document.getElementById("viewreg");
 var topNav = document.getElementsByClassName("topnav")[0];
 var sideNav = document.getElementsByClassName("sidenav")[0];
 var content = document.getElementsByClassName("content")[0];
+var popup = document.getElementById("cookiesPopup");
 var cued = false;
 
 //Button query
@@ -15,6 +16,9 @@ window.addEventListener("resize", function() {
 });
 
 window.addEventListener("load", function() {
+    if (!window.localStorage.getItem("nocookies")) {
+        showPopup();
+    }
     fixCss();
 });
 
@@ -29,12 +33,12 @@ menuButton.addEventListener('click', function() {
 function fixCss() {
     //Menu button
     let current = document.getElementById("current");
-    menuButton.style.width = current.offsetHeight + "px";
-    menuButton.style.height = current.offsetHeight + "px";
+    menuButton.style.width = current.offsetHeight - 2 + "px";
+    menuButton.style.height = current.offsetHeight - 2 + "px";
 
     //Fix sideNav for mobile
     if (btQuery.matches) {
-        sideNav.style.marginTop = topNav.offsetHeight + "px";
+        sideNav.style.marginTop = topNav.offsetHeight - 2 + "px";
         sideNav.style.display = "none";
         content.style.marginLeft = "";
         topNav.style.marginLeft = "";
@@ -50,4 +54,13 @@ function fixCss() {
     content.style.marginTop = topNav.offsetHeight + "px";
 
     cued = false;
+}
+
+function showPopup() {
+    popup.style.display = "block";
+}
+
+function setCookies() {
+    localStorage.setItem("nocookies", "true");
+    popup.style.display = "";
 }

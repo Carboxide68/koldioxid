@@ -219,9 +219,41 @@ body * {
     height: 0;
 }
 
+#viewreg:focus {
+    outline:0;
+    background-color: transparent;
+    border: 0;
+}
+
 #viewreg > div {
     width: 80%;
     height: 11%;
     background-color: black;
-    margin: 13% auto;
+    margin: 13% auto;   
+}
+
+#cookiesPopup {
+    display: none;
+    z-index: 9001;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(255, 92, 119);
+}
+
+#cookiesPopup > * {
+    display: inline-block;
+}
+
+#cookiesPopup > button {
+    left: 10vw;
+    margin-top: auto;
+    margin-left: auto;
+    height: 7vh;
+    border-radius: 0;
+    border-style: solid;
+    border-color: black;
+    background-color: lightblue;
+    cursor: pointer;
 }
