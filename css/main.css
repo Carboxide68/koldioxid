@@ -129,7 +129,7 @@ body * {
 
 .infotable {
     width: 100%;
-    border: solid 1px rgb(240, 104, 42);
+    border-color: rgb(240, 104, 42);
     border-collapse: collapse;
 }
 
@@ -140,15 +140,11 @@ body * {
 
 .infotable th {
     text-align: center;
+}
+
+.infotable td, th{
+    border: 1px solid black; 
     border-collapse: collapse;
-}
-
-.infotable tr {
-
-}
-
-.infotable td {
-
 }
 
 .infosection {

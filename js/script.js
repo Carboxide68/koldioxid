@@ -1,3 +1,4 @@
+//Variable initialization
 var menuButton = document.getElementById("viewreg");
 var topNav = document.getElementsByClassName("topnav")[0];
 var sideNav = document.getElementsByClassName("sidenav")[0];
@@ -15,14 +16,14 @@ window.addEventListener("resize", function() {
     }
 });
 
-window.addEventListener("load", function() {
+window.addEventListener("load", function() { //Things to do when the window is loaded
     if (!window.localStorage.getItem("nocookies")) {
         showPopup();
     }
     fixCss();
 });
 
-menuButton.addEventListener('click', function() {
+menuButton.addEventListener('click', function() { //When the hamburger button is clicked on when in mobile mode
     if (sideNav.style.display == "none" || sideNav.style.display == "") {
         sideNav.style.display = "block";
     } else {
@@ -43,7 +44,7 @@ function fixCss() {
         content.style.marginLeft = "";
         topNav.style.marginLeft = "";
         content.style.width = "100%";
-    } else {
+    } else { //Fix everythingn else relative to the sideNav
         sideNav.style.marginTop = "";
         sideNav.style.display = "block";
         content.style.marginLeft = sideNav.offsetWidth + "px";
@@ -53,6 +54,7 @@ function fixCss() {
     
     content.style.marginTop = topNav.offsetHeight + "px";
 
+    //Makes sure that you don't update the css too often when resizing the window
     cued = false;
 }
 
@@ -60,7 +62,7 @@ function showPopup() {
     popup.style.display = "block";
 }
 
-function setCookies() {
+function setCookies() { //Saves in local storage that this person has allowed not using cookies and removes the popup element
     localStorage.setItem("nocookies", "true");
     popup.style.display = "";
 }
