@@ -44,7 +44,7 @@ function fixCss() {
         content.style.marginLeft = "";
         topNav.style.marginLeft = "";
         content.style.width = "100%";
-    } else { //Fix everythingn else relative to the sideNav
+    } else { //Fix everythin else relative to the sideNav
         sideNav.style.marginTop = "";
         sideNav.style.display = "block";
         content.style.marginLeft = sideNav.offsetWidth + "px";
