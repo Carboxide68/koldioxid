@@ -24,7 +24,7 @@ window.addEventListener("load", function() { //Things to do when the window is l
 });
 
 menuButton.addEventListener('click', function() { //When the hamburger button is clicked on when in mobile mode
-    if (sideNav.style.display == "none" || sideNav.style.display == "") {
+    if (sideNav.style.display === "none" || sideNav.style.display === "") {
         sideNav.style.display = "block";
     } else {
         sideNav.style.display = "none";

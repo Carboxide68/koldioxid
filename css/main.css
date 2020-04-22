@@ -12,6 +12,7 @@ body * {
     font-family: 'Raleway', 'Times';
 }
 
+/* Attach this class to an element if you don't want the text to be able to be selected */
 .noselect {
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
@@ -21,11 +22,13 @@ body * {
             user-select: none;
 }
 
+/* Makes the wrapper span the whole page */
 .wrapper {
     height: 100%;
     width: 100%;
 }
 
+/* Adjusting the style for the navigation bar on the side */
 .sidenav {
     height: 100%;
     min-width: 150px;
@@ -37,16 +40,20 @@ body * {
     scrollbar-color: rgb(110, 110, 110) rgb(124, 155, 165);
 }
 
+/* Adjusting the scrollbar for firefox that doesn't support the scrollbar-color style */
 .sidenav::-webkit-scrollbar {
     
     background-color: rgb(110, 110, 110);
 }
 
+
+/* Adjusting everything directly under the sidenav to have some padding on the sides */
 .sidenav > * {
     padding-left: 1em;
     padding-right: 1em;
 }
 
+/* Styles the links under the sidenav */
 .sidenav a {
     display: block;
     box-sizing: border-box;
@@ -58,14 +65,17 @@ body * {
     border-bottom: solid 1px black;
 }
 
+/* Adds a nice background for when hovering over the links */
 .sidenav a:hover {
     background-image: linear-gradient(to right, white, lightblue);
 }
 
+/* Changes the font size */
 .sidenav > h2 {
     font-size: 22px;
 }
 
+/* Makes the top navigation bar a nice style */
 .topnav {
     position: fixed;
     height: auto;
@@ -75,10 +85,12 @@ body * {
     background-color: lightblue;
 }
 
+/* Makes everything directly under the topnav to stick to the top */
 .topnav > * {
     vertical-align: top;
 }
 
+/* Styles the buttons redirecting you to different pages */
 .sitebutton {
     border: none;
     padding: 2vh 3vw;
@@ -91,11 +103,14 @@ body * {
     cursor: pointer;
 }
 
+/*  Changes the style for hovering over a sitebutton, and keeps it on the button that has the current id
+    which i assign to the link to the current page */
 .sitebutton:hover, #current {
     background-color: rgba(0, 0, 0, 0.7);
     color: rgb(255, 255, 255);
 }
 
+/* Makes the content div fit to the page relative to the other navigation bars */
 .content {
     margin-left: 17vw;
     margin-left: max(17vw, 150px);
@@ -107,6 +122,7 @@ body * {
     min-height: 100vh;
 }
 
+/* Changes the style of the wikipedia style box of information on carbon dioxide */
 .infobox {
     padding: 0.3em;
     display: inline-block;
@@ -115,6 +131,7 @@ body * {
     border: solid black 1px;
 }
 
+/* Styles images directly under this box */
 .infobox > img {
     display: block;
     width: 60%;
@@ -123,16 +140,19 @@ body * {
     margin-right: auto;
 }
 
+/* Styles headers directly under the infobox */
 .infobox > h2 {
     text-align: center;
 }
 
+/* Styles my wikipediastyle table */
 .infotable {
     width: 100%;
     border-color: rgb(240, 104, 42);
     border-collapse: collapse;
 }
 
+/* Changes the styles for everything under the table */
 .infotable * {
     font-family: sans-serif;
     border-collapse: collapse;
@@ -147,6 +167,7 @@ body * {
     border-collapse: collapse;
 }
 
+/* Makes a standard for how a section in the content grid should look like */
 .infosection {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -155,11 +176,13 @@ body * {
     margin-top: 3vh;
 }
 
+/* Makes everything directly under the section stick to the top */
 .infosection > * {
     vertical-align: top;
     margin: auto;
 }
 
+/* Makes a standard for a textbox */
 .textbox {
     display: inline-block;
     width: 90%;
@@ -168,6 +191,7 @@ body * {
     text-align: justify;
 }
 
+/* Changes the headers under a textbox */
 .textbox > h2 {
     text-align: center;
 }
@@ -176,12 +200,14 @@ body * {
     text-align: center;
 }
 
+/* Makes a standard for how images should look like under sections */
 .picstyle {
     width: 90%;
     height: auto;
     margin: auto;
 }
 
+/* Makes a standard for how information squares should look like */
 .funfact {
     width: 70%;
     height: auto;
@@ -200,6 +226,8 @@ body * {
     font-size: larger;
 }
 
+
+/* Specialized styling for specific elements */
 #vadfinns {
     margin-top: 2vh;
 }
@@ -247,6 +275,7 @@ body * {
     display: inline-block;
 }
 
+/* Styles the popup button */
 #cookiesPopup > button {
     left: 10vw;
     margin-top: auto;

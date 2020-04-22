@@ -9,7 +9,9 @@
     <title>Koldioxid</title>
 </head>
 <body>
+    <!-- A div spanning my whole site, there so I don't have to change body, no real function -->
     <div class="wrapper">
+        <!-- The navigation bar at the side of the page -->
         <nav class="sidenav"> 
             <h2 class="noselect">Innehåll</h2>
             <a class="register noselect" href="#">Koldioxid</a>
@@ -21,18 +23,24 @@
                 </ul>
             </div>
         </nav>
+        <!-- The navigation bar at the top of the page that lets you go to other pages -->
         <nav class="topnav">
+            <!-- Using html divs and styling to make a hamburger list style button -->
+            <!-- This will be hidden if you're not using a phone -->
             <div class="noselect" id="viewreg">
                 <div></div>
                 <div></div>
                 <div></div>
             </div>
-            <a class="sitebutton noselect" id="current">Hem</a>
+            <a class="sitebutton noselect" id="current" href="#">Hem</a>
             <a class="sitebutton noselect" href="miljo.html">Miljö</a>
             <a class="sitebutton noselect" href="psykologi.html">Psykologisk påverkan</a>
         </nav>
+        <!-- The place for the content of the page, this is the thing that mostly changes between the pages -->
         <div class="content">
+            <!-- A row in the gridstyle content is marked with section -->
             <section class="infosection" id="koldioxid">
+                <!-- An informative wikipediastyle box -->
                 <div class="infobox">
                     <h2 class="noselect">Koldioxid</h2>
                     <img src="img/co2.png" alt="En bild av en koldioxidsmolekyl" title="Koldioxidsmolekyl">
@@ -127,6 +135,7 @@
             </section>
         </div>
     </div>
+    <!-- A popup notifying that this website uses cookies, is removed forever if you press "Ok, got it!" -->
     <div id="cookiesPopup">
         <p>We don't use cookies to ensure you have the best browsing experience on our website.</p>
         <button onclick="setCookies()">Ok, got it!</button>

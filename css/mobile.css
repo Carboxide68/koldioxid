@@ -1,27 +1,33 @@
 
+/* We want you to only have one column when you're on mobile so that it's easier to read */
 .infosection {
     grid-template-columns: 1fr;
 }
 
+/* Adjust for no longer having a sidenav */
 .content {
     margin-left: 0;
     width: 100%;
 }
 
+/* Adjust for no longer having a sidenav */
 .topnav {
     margin-left: 0;
     width: 100%;
 }
 
+/* Changing button sizes */
 .sitebutton {
     font-size: large;
 }
 
+/* Removes the sidenav */
 .sidenav {
     display: none;
     width: 150px;
 }
 
+/* Makes the button toggling the sidenav visible */
 #viewreg {
     display: inline-block;
     height: 100%;
